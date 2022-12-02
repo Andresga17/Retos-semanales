@@ -10,7 +10,7 @@ Dos palabras exactamente iguales no son anagrama.
 
 let word1 = 'amor'
 let word2 = 'roma'
-// console.log(word[4])
+
 function isAnAnagram (word1, word2) {
     let wordArray1 = Array.from(word1).sort()
     let wordArray2 = Array.from(word2).sort()
