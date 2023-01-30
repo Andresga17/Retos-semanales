@@ -10,7 +10,7 @@
  */
 
 const palabra = "soy una frase al reves"
-
+// console.time()
 const reverseString = (string) => {
     let strReverse = ""
     for (let i = string.length - 1; i >= 0; i--) {
@@ -18,5 +18,5 @@ const reverseString = (string) => {
     }
     return strReverse
 }
-
+// console.time()
 console.log(reverseString(palabra))
