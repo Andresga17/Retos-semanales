@@ -134,5 +134,37 @@ my_new_list = [4, 29, 36, 10, 430, 7]
 my_new_list.sort() #Ordena de menor a mayor
 print(my_new_list)
 
-#Tuplas
+#Tuplas. Las tuplas son inmutables
 
+my_tuple = tuple()
+my_other_tuple = (60, 30, 45) #Dos formas de declarar las tuplas
+
+my_tuple = (29, 1244324, "Andres", 'Gonzalez')
+print(my_tuple)
+
+print(my_tuple.count(29)) #El count cuenta los la cantidad de ese elemento que hay en la tupla
+print(my_tuple.index("Andres"))
+
+my_sum_tuple = my_tuple + my_other_tuple
+print(my_sum_tuple)
+
+print(my_sum_tuple[3:6]) # muestra los elementos desde el indice 3 hasta el 6 sin mostrar el 6
+
+#SETS
+#No es está ordenado y no admite repetidos. Como los conjuntos de matematicas
+my_set = set()
+my_other_set = {}
+
+print(type(my_other_set)) #Inicialmente es un diccionario
+
+my_other_set = {"andres", "gonzalez", 29}
+
+print(type(my_other_set)) #Luego asignarle valores es de tipo set
+
+my_other_set.add("chato")
+print(my_other_set)
+
+my_other_set.add("andres")
+print(my_other_set)
+
+print("andres" in my_other_set)
