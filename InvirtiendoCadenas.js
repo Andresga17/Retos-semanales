@@ -9,14 +9,14 @@
  -Si se pasa "Hola mundo" retornara "odnum aloH"
  */
 
-const palabra = "soy una frase al reves"
+const palabra = "soy una frase al reves";
 // console.time()
 const reverseString = (string) => {
-    let strReverse = ""
-    for (let i = string.length - 1; i >= 0; i--) {
-        strReverse += string[i]
-    }
-    return strReverse
-}
+  let strReverse = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    strReverse += string[i];
+  }
+  return strReverse;
+};
 // console.time()
-console.log(reverseString(palabra))
+console.log(reverseString(palabra));

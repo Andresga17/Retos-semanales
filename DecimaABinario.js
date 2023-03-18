@@ -12,21 +12,21 @@
 const numberDecimal = 725
 
 const decimalToBinn = (numberDecimal) => {
-    
     let numberBin = []
-    numberBin.unshift(Math.floor(numberDecimal % 2))
+    let bin = ''
+    numberBin.unshift(Math.floor(numberDecimal%2))
 
     while (numberDecimal >= 2) {
     
-        if (numberDecimal === 1) {
+        if (numberDecimal === 1 ) {
             numberBin.push(numberDecimal)
         }else {
             numberDecimal = Math.floor(numberDecimal / 2)
             numberBin.unshift(numberDecimal % 2)
         }
     }
-
-    return numberBin.toString()
+    numberBin.map(numBin => bin += numBin)
+    return Number(bin)
 }
 
 
