@@ -24,7 +24,10 @@ const contandoPalabras = (word) => {
 
   for (let i = 0; i < arrayWord.length; i++) {
     if (arrayWord[i].match(/[\,.;:]/)) {
-      arrayWord[i] = arrayWord[i].substring(0, arrayWord[i].length - 1);
+      arrayWord[i] = arrayWord[i].substring(
+        0,
+        arrayWord[i].length - 1
+      );
     }
   }
 

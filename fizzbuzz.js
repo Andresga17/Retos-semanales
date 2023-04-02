@@ -13,7 +13,10 @@ for (let i = 1; i <= 100; i++) {
   arrayFizzBuzz.push(i);
   // console.log(i)
 
-  if (arrayFizzBuzz[i - 1] % 3 === 0 && arrayFizzBuzz[i - 1] % 5 === 0) {
+  if (
+    arrayFizzBuzz[i - 1] % 3 === 0 &&
+    arrayFizzBuzz[i - 1] % 5 === 0
+  ) {
     arrayFizzBuzz[i - 1] = "Fizz buzz";
   } else if (arrayFizzBuzz[i - 1] % 5 === 0) {
     arrayFizzBuzz[i - 1] = "Buzz";

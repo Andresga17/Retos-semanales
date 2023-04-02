@@ -21,7 +21,11 @@ const isPrime = (number) => {
   }
   arrayCount;
 
-  if (arrayCount.includes(1) || number === 1 || number === 0) {
+  if (
+    arrayCount.includes(1) ||
+    number === 1 ||
+    number === 0
+  ) {
     return `${number} no es primo`;
   } else {
     return `${number} es primo`;

@@ -56,15 +56,22 @@ console.log(textToMorseFun("SOS"));
 //codigo morse a texto
 
 const morseToTextFun = (morseCode) => {
-  const characterMorseRegex = new RegExp(/[\.\-]{1,5}/g);
-  const morseCharArray = morseCode.match(characterMorseRegex);
+  const characterMorseRegex = new RegExp(
+    /[\.\-]{1,5}/g
+  );
+  const morseCharArray = morseCode.match(
+    characterMorseRegex
+  );
 
   let morseToText = "";
 
   const alphabetArray = Object.entries(alphabet);
   for (let i = 0; i < alphabetArray.length; i++) {
     for (morseCharacter of morseCharArray) {
-      if (morseCharacter === alphabetArray[i][1].trim()) {
+      if (
+        morseCharacter ===
+        alphabetArray[i][1].trim()
+      ) {
         morseToText += alphabetArray[i][0];
       }
     }
@@ -72,4 +79,8 @@ const morseToTextFun = (morseCode) => {
   return morseToText;
 };
 
-console.log(morseToTextFun(".- -... -.-. -.. . ..-. --. .... .. -.."));
+console.log(
+  morseToTextFun(
+    ".- -... -.-. -.. . ..-. --. .... .. -.."
+  )
+);
