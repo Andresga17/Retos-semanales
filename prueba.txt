@@ -1,15 +1,5 @@
-/**
- * Reto #10
- * EXPRESIONES EQUILIBRADAS
- * 
- * Enunciado: Crea un programa que comprueba si los parentesis, llaves y corchetes de 
- * una expresion estan equilibrados.
- *  - Equilibrado siginifica que estos delimitadores se abren y cierran en orden y de forma correcta.
- *  - Parentesis, llaves y corchetes son igual de prioritarios. No hay uno mas importante que otro.
- *  - Expresion balanceada: { [ a * ( c + d ) - 5 ] }
- *  - Expresion no balanceada: { a * ( c + d )] - 5 }
- */
+Ana lleva al oso la '''''.:á´í
+Amor azul Ramera, de todo te di. Mariposa colosal, sí, yo de todo te di. Poda la rosa, Venus. El átomo como tal es
+un evasor alado. Pide, todo te doy: isla, sol, ocaso, pirámide. Todo te daré: mar, luz, aroma
 
- \{.+\}
- \[.+\]
- \(.+\)
+[a-z\u00C0-\u017F]
